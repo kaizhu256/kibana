@@ -63,7 +63,9 @@
     "mocha": "mocha",
     "mocha:debug": "mocha --debug-brk",
     "sterilize": "grunt sterilize",
-    "uiFramework:start": "webpack-dev-server --config src/ui_framework/doc_site/webpack.config.js --hot --inline --content-base src/ui_framework/doc_site/build"
+    "uiFramework:start": "webpack-dev-server --config src/ui_framework/doc_site/webpack.config.js --hot --inline --content-base src/ui_framework/doc_site/build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -168,7 +170,8 @@
     "vision": "4.1.0",
     "webpack": "github:elastic/webpack#fix/query-params-for-aliased-loaders",
     "whatwg-fetch": "0.9.0",
-    "wreck": "6.2.0"
+    "wreck": "6.2.0",
+    "snyk": "^1.46.0"
   },
   "devDependencies": {
     "@elastic/eslint-config-kibana": "0.3.0",
@@ -245,5 +248,6 @@
   "engines": {
     "node": "6.9.0",
     "npm": "3.10.8"
-  }
+  },
+  "snyk": true
 }
