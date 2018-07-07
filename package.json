@@ -63,7 +63,9 @@
     "mocha": "mocha",
     "mocha:debug": "mocha --debug-brk",
     "sterilize": "grunt sterilize",
-    "uiFramework:start": "webpack-dev-server --config src/ui_framework/doc_site/webpack.config.js --hot --inline --content-base src/ui_framework/doc_site/build"
+    "uiFramework:start": "webpack-dev-server --config src/ui_framework/doc_site/webpack.config.js --hot --inline --content-base src/ui_framework/doc_site/build",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -92,9 +94,9 @@
     "ansicolors": "0.3.2",
     "autoprefixer": "6.5.4",
     "autoprefixer-loader": "2.0.0",
-    "babel": "5.8.38",
-    "babel-core": "5.8.38",
-    "babel-loader": "5.3.2",
+    "babel": "6.0.0",
+    "babel-core": "6.9.0",
+    "babel-loader": "6.0.0",
     "babel-runtime": "5.8.38",
     "bluebird": "2.9.34",
     "body-parser": "1.12.0",
@@ -137,7 +139,7 @@
     "leaflet": "0.7.5",
     "less": "2.7.1",
     "less-loader": "2.2.3",
-    "lodash": "3.10.1",
+    "lodash": "4.17.5",
     "marked": "0.3.6",
     "minimatch": "2.0.10",
     "mkdirp": "0.5.1",
@@ -168,7 +170,8 @@
     "vision": "4.1.0",
     "webpack": "github:elastic/webpack#fix/query-params-for-aliased-loaders",
     "whatwg-fetch": "0.9.0",
-    "wreck": "6.2.0"
+    "wreck": "6.2.0",
+    "snyk": "^1.88.2"
   },
   "devDependencies": {
     "@elastic/eslint-config-kibana": "0.3.0",
@@ -245,5 +248,6 @@
   "engines": {
     "node": "6.9.0",
     "npm": "3.10.8"
-  }
+  },
+  "snyk": true
 }
