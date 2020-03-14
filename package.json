@@ -140,7 +140,7 @@
     "lodash": "3.10.1",
     "marked": "0.3.6",
     "minimatch": "2.0.10",
-    "mkdirp": "0.5.1",
+    "mkdirp": "1.0.0",
     "moment": "2.13.0",
     "moment-timezone": "0.5.4",
     "no-ui-slider": "1.2.0",
